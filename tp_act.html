@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="main_header">
+            <a href="index.html">
+                <h3>Anime Parser</h3>
+            </a>
+        </div>
+        <div class="search">
+            Поиск
+        </div>
+        <table class="type_table">
+            <tr>
+                <th><a href="Fantasy.html">Фэнтэзи</a></th>
+                <th><a href="adventure.html">Приключение</a></th>
+                <th><a href="Romantic.html">Романтика</a></th>
+                <th><a href="Comedy.html">Комедия</a></th>
+                <th><a href="Drama.html">Драма</a></th>
+                <th><a href="Horror.html">Ужасы</a></th>
+                <th><a href="Detective.html">Детектив</a></th>
+                <th><a href="action.html">Боевик</a></th>
+            </tr>
+        </table>
+    </header>
+
+    <main>
+        <div class="featured">
+            <div class="anime_list">
+              {% for card in anime %}
+              <div class="anime_card">
+                <img src="{{card.Обложка}}" width="200" height="300" alt="">
+                <div class="card_info">
+                  <h4>{{card.Название}}</h4>
+                  <p>Год выхода: {{card.Год_выхода}}</p>
+                  <p>Рейтинг: {{card.Рейтинг}}</p>
+                  <p>Статус: {{card.Статус}}</p>
+                  <p>Серии: {{card.Серии}}</p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+        </div>
+      </main>
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

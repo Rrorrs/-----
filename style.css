@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=LXGW+WenKai+TC&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #d9d9d9ff;
+}
+
+.main_header {
+  width: 90%;
+  height: 100%;
+  background-color: #a8a8a8;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-seri;
+  color: #ffff;
+}
+
+.search {
+  width: 70%;
+  height: 100%;
+  background-color: #a8a8a8;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #ffff;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+h3 {
+  margin: 0;
+  margin-left: 20px;
+  letter-spacing: 5px;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #ffff;
+}
+
+.type_table {
+  color: #ffff;
+  margin: 0 auto;
+  padding: 10px;
+  border-spacing: 10px 3px;
+}
+
+th {
+  padding: 5px 25px 5px 25px;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #a8a8a8;
+}
+
+.anime_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #a8a8a8;
+  font-family: "Bellota Text", sans-serif;
+  color: white;
+}
+
+.anime_card {
+  background-color: dimgrey;
+  margin: 10px;
+  padding: 10px;
+  max-width: 80%;
+}
+
+.card_info{
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+
+img {
+  max-width: 100%;
+  margin: 5px;
+}
+
+td {
+  padding: 170px 100px 170px 100px;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #a8a8a8;
+}
+
+.featured {
+  background-color: #a8a8a8;
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.featured_table {
+  margin: 0 auto;
+  padding: 10px;
+  border-spacing: 10px 3px;
+}
