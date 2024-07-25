@@ -45,20 +45,22 @@
     </div>
 </header>
 
-<body>
+<body class="bg">
     <main>
         <div class="featured">
             <div class="anime_list">
                 {% for card in anime %}
-                <div class="anime_card">
-                    <img src="{{card.Обложка}}" width="200" height="300" alt="">
-                    <div class="card_info">
-                        <h4>{{card.Название}}</h4>
-                        <p>Год выхода: {{card.Год_выхода}}</p>
-                        <p>Рейтинг: {{card.Рейтинг}}</p>
-                        <p>Статус: {{card.Статус}}</p>
-                        <p>Серии: {{card.Серии}}</p>
-                    </div>
+                <div class="anime_card" title="Перейти к просмотру">
+                    <a href="{{card.Ссылка}}" class="link">
+                        <img src="{{card.Обложка}}" width="200" height="300" alt="">
+                        <div class="card_info">
+                            <h4>{{card.Название}}</h4>
+                            <p>Год выхода: {{card.Год_выхода}}</p>
+                            <p>Рейтинг: {{card.Рейтинг}}</p>
+                            <p>Статус: {{card.Статус}}</p>
+                            <p>Серии: {{card.Серии}}</p>
+                        </div>
+                    </a>
                 </div>
                 {% endfor %}
             </div>
