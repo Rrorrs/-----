@@ -11,45 +11,56 @@
     <link href="bg_animation.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-    <header>
+<header>
+    <div class="header">
         <div class="main_header">
-            <a href="index.html">
-                <h3>Anime Parser</h3>
+            <a href="index.html" title="На Главную">
+                <h1>Anime Parser<svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.336 2.253a1 1 0 0 1 1.328 0l9 8a1 1 0 0 1-1.328 1.494L20 11.45V19a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7.55l-.336.297a1 1 0 0 1-1.328-1.494l9-8ZM6 9.67V19h3v-5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5h3V9.671l-6-5.333-6 5.333V9.67ZM13 19v-4h-2v4h2Z">
+                        </path>
+                    </svg>
+                </h1>
             </a>
         </div>
         <div class="search">
             Поиск
         </div>
-        <table class="type_table">
-            <tr>
-                <th><a href="Fantasy.html">Фэнтэзи</a></th>
-                <th><a href="adventure.html">Приключение</a></th>
-                <th><a href="Romantic.html">Романтика</a></th>
-                <th><a href="Comedy.html">Комедия</a></th>
-                <th><a href="Drama.html">Драма</a></th>
-                <th><a href="Horror.html">Ужасы</a></th>
-                <th><a href="Detective.html">Детектив</a></th>
-                <th><a href="action.html">Боевик</a></th>
-            </tr>
-        </table>
-    </header>
 
+        <div class="featured">
+            <div class="type_table">
+
+                <div class="th"><a href="Fantasy.html"><button>Фэнтэзи</button></a></div>
+                <div class="th"><a href="adventure.html"><button>Приключение</button></a></div>
+                <div class="th"><a href="Romantic.html"><button>Романтика</button></a></div>
+                <div class="th"><a href="Comedy.html"><button>Комедия</button></a></div>
+                <div class="th"><a href="Drama.html"><button>Драма</button></a></div>
+                <div class="th"><a href="Horror.html"><button>Ужасы</button></a></div>
+                <div class="th"><a href="Detective.html"><button>Детектив</button></a></div>
+                <div class="th"><a href="action.html"><button>Боевик</button></a></div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
     <main>
         <div class="featured">
             <div class="anime_list">
-              {% for card in anime %}
-              <div class="anime_card">
-                <img src="{{card.Обложка}}" width="200" height="300" alt="">
-                <div class="card_info">
-                  <h4>{{card.Название}}</h4>
-                  <p>Год выхода: {{card.Год_выхода}}</p>
-                  <p>Рейтинг: {{card.Рейтинг}}</p>
-                  <p>Статус: {{card.Статус}}</p>
-                  <p>Серии: {{card.Серии}}</p>
+                {% for card in anime %}
+                <div class="anime_card">
+                    <img src="{{card.Обложка}}" width="200" height="300" alt="">
+                    <div class="card_info">
+                        <h4>{{card.Название}}</h4>
+                        <p>Год выхода: {{card.Год_выхода}}</p>
+                        <p>Рейтинг: {{card.Рейтинг}}</p>
+                        <p>Статус: {{card.Статус}}</p>
+                        <p>Серии: {{card.Серии}}</p>
+                    </div>
                 </div>
-              </div>
-              {% endfor %}
+                {% endfor %}
             </div>
         </div>
     </main>
