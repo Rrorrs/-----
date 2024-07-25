@@ -4,87 +4,142 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>Anime Parser</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="animation.css" rel="stylesheet" type="text/css" />
+    <link href="button.css" rel="stylesheet" type="text/css" />
+    <link href="bg_animation.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-    <header>
+<header>
+    <div class="header">
         <div class="main_header">
-            <a href="index.html">
-                <h3>Anime Parser</h3>
+            <a href="index.html" title="На Главную">
+                <h1>Anime Parser<svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.336 2.253a1 1 0 0 1 1.328 0l9 8a1 1 0 0 1-1.328 1.494L20 11.45V19a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7.55l-.336.297a1 1 0 0 1-1.328-1.494l9-8ZM6 9.67V19h3v-5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5h3V9.671l-6-5.333-6 5.333V9.67ZM13 19v-4h-2v4h2Z">
+                        </path>
+                    </svg>
+                </h1>
             </a>
         </div>
         <div class="search">
             Поиск
         </div>
-        <table class="type_table">
-            <tr>
-                <th><a href="Fantasy.html">Фэнтэзи</a></th>
-                <th><a href="adventure.html">Приключение</a></th>
-                <th><a href="Romantic.html">Романтика</a></th>
-                <th><a href="Comedy.html">Комедия</a></th>
-                <th><a href="Drama.html">Драма</a></th>
-                <th><a href="Horror.html">Ужасы</a></th>
-                <th><a href="Detective.html">Детектив</a></th>
-                <th><a href="action.html">Боевик</a></th>
-            </tr>
-        </table>
-    </header>
 
+        <div class="featured">
+            <div class="type_table">
+
+                <div class="th"><a href="Fantasy.html"><button>Фэнтэзи</button></a></div>
+                <div class="th"><a href="adventure.html"><button>Приключение</button></a></div>
+                <div class="th"><a href="Romantic.html"><button>Романтика</button></a></div>
+                <div class="th"><a href="Comedy.html"><button>Комедия</button></a></div>
+                <div class="th"><a href="Drama.html"><button>Драма</button></a></div>
+                <div class="th"><a href="Horror.html"><button>Ужасы</button></a></div>
+                <div class="th"><a href="Detective.html"><button>Детектив</button></a></div>
+                <div class="th"><a href="action.html"><button>Боевик</button></a></div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<body class="bg">
     <main>
         <div class="featured">
             <div class="anime_list">
-              
-              <div class="anime_card">
-                <img src="https://animego.org/media/cache/thumbs_500x700/upload/anime/images/5bb095f7d0221321870491.jpg" width="200" height="300" alt="">
-                <div class="card_info">
-                  <h4> Необъятный океан</h4>
-                  <p>Год выхода: 2018</p>
-                  <p>Рейтинг: 8.97</p>
-                  <p>Статус: Вышел</p>
-                  <p>Серии: 12</p>
+                
+                <div class="anime_card" title="Перейти к просмотру">
+                    <a href="https://yummyani.me/catalog/item/neob-yatnyj-okean" class="link">
+                        <img src="https://animego.org/media/cache/thumbs_500x700/upload/anime/images/5bb095f7d0221321870491.jpg" width="200" height="300" alt="">
+                        <div class="card_info">
+                            <h4> Необъятный океан</h4>
+                            <p>Год выхода: 2018</p>
+                            <p>Рейтинг: 8.97</p>
+                            <p>Статус: Вышел</p>
+                            <p>Серии: 12</p>
+                        </div>
+                    </a>
                 </div>
-              </div>
-              
-              <div class="anime_card">
-                <img src="https://animego.vip/uploads/posts/2023-09/1223947_1693932603.jpg" width="200" height="300" alt="">
-                <div class="card_info">
-                  <h4>Магистр дьявольского культа</h4>
-                  <p>Год выхода: 2018</p>
-                  <p>Рейтинг: 8.75</p>
-                  <p>Статус: Вышел</p>
-                  <p>Серии: 15</p>
+                
+                <div class="anime_card" title="Перейти к просмотру">
+                    <a href="https://animego.vip/3998-magistr-djavolskogo-kulta.html" class="link">
+                        <img src="https://animego.vip/uploads/posts/2023-09/1223947_1693932603.jpg" width="200" height="300" alt="">
+                        <div class="card_info">
+                            <h4>Магистр дьявольского культа</h4>
+                            <p>Год выхода: 2018</p>
+                            <p>Рейтинг: 8.75</p>
+                            <p>Статус: Вышел</p>
+                            <p>Серии: 15</p>
+                        </div>
+                    </a>
                 </div>
-              </div>
-              
-              <div class="anime_card">
-                <img src="https://animego.org/media/cache/thumbs_500x700/upload/anime/images/6428625cc65c4478990836.jpg" width="200" height="300" alt="">
-                <div class="card_info">
-                  <h4>Госпожа Кагуя: в любви как на войне</h4>
-                  <p>Год выхода: 2019</p>
-                  <p>Рейтинг: 8.4</p>
-                  <p>Статус: Вышел</p>
-                  <p>Серии: 12</p>
+                
+                <div class="anime_card" title="Перейти к просмотру">
+                    <a href="https://yummyani.me/catalog/item/gospozha-kaguya-v-lyubvi-kak-na-vojne" class="link">
+                        <img src="https://animego.org/media/cache/thumbs_500x700/upload/anime/images/6428625cc65c4478990836.jpg" width="200" height="300" alt="">
+                        <div class="card_info">
+                            <h4>Госпожа Кагуя: в любви как на войне</h4>
+                            <p>Год выхода: 2019</p>
+                            <p>Рейтинг: 8.4</p>
+                            <p>Статус: Вышел</p>
+                            <p>Серии: 12</p>
+                        </div>
+                    </a>
                 </div>
-              </div>
-              
-              <div class="anime_card">
-                <img src="https://animego.org/media/cache/thumbs_500x700/upload/anime/images/632869bc6e777452668058.jpg" width="200" height="300" alt="">
-                <div class="card_info">
-                  <h4>Моб Психо 100 3</h4>
-                  <p>Год выхода: 2022</p>
-                  <p>Рейтинг: 8.67</p>
-                  <p>Статус: Вышел</p>
-                  <p>Серии: 12</p>
+                
+                <div class="anime_card" title="Перейти к просмотру">
+                    <a href="https://yummyani.me/catalog/item/mob-psiho-100-3" class="link">
+                        <img src="https://animego.org/media/cache/thumbs_500x700/upload/anime/images/632869bc6e777452668058.jpg" width="200" height="300" alt="">
+                        <div class="card_info">
+                            <h4>Моб Психо 100 3</h4>
+                            <p>Год выхода: 2022</p>
+                            <p>Рейтинг: 8.67</p>
+                            <p>Статус: Вышел</p>
+                            <p>Серии: 12</p>
+                        </div>
+                    </a>
                 </div>
-              </div>
-              
+                
+                <div class="anime_card" title="Перейти к просмотру">
+                    <a href="https://yummyani.me/catalog/item/volejbol-k-vershine-2" class="link">
+                        <img src="https://animego.org/media/cache/thumbs_500x700/upload/anime/images/5f422c74517b8366786351.jpg" width="200" height="300" alt="">
+                        <div class="card_info">
+                            <h4>Волейбол!! К вершине 2</h4>
+                            <p>Год выхода: 2020</p>
+                            <p>Рейтинг: 8.7</p>
+                            <p>Статус: Вышел</p>
+                            <p>Серии: 12</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="anime_card" title="Перейти к просмотру">
+                    <a href="https://yummyani.me/catalog/item/podzemele-vkusnostey" class="link">
+                        <img src="https://animego.org/media/cache/thumbs_500x700/upload/anime/images/66112eced2b80482910239.jpg" width="200" height="300" alt="">
+                        <div class="card_info">
+                            <h4>Подземелье вкусностей</h4>
+                            <p>Год выхода: 2024</p>
+                            <p>Рейтинг: 8.9</p>
+                            <p>Статус: Вышел</p>
+                            <p>Серии: 24</p>
+                        </div>
+                    </a>
+                </div>
+                
             </div>
         </div>
     </main>
 
     <footer>
+        <p>Anime Parser был сделан для быстрого поиска аниме для просмотра,
+            <br>
+            Он не является первоисточником а просто находит все с других не очень красивых сайтов.
+            <br>
+            Сайт сделан в образавательных целях, в рамках онлайн школы <a class="footer"
+                href="https://dvmn.org">Devman</a>
+        </p>
     </footer>
 
     <script src="script.js"></script>
