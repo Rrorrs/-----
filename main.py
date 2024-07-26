@@ -14,16 +14,27 @@ env = Environment(
     autoescape=select_autoescape(['html', 'xml'])
 )
 template = env.get_template('template.html')
-file_xl = 'anime.xlsx'
+xl_anime = 'anime.xlsx'
+# list_search = 'search.xlsx'
+
 anime = pd.read_excel(
-    file_xl,
+    xl_anime,
     sheet_name='Лучшее',
     na_values=['N/A', 'NA'],
     keep_default_na=False).to_dict(orient='records')
-rendered_page = template.render(anime=anime)
+rendered_card = template.render(anime=anime)
+
+
+# search = pd.read_excel(
+#     list_search,
+#     sheet_name='Поиск',
+#     na_values=['N/A', 'NA'],
+#     keep_default_na=False).to_dict(orient='records')
+# rendered_search = template.render(search=search)
 
 with open('index.html', 'w', encoding="utf8") as file:
-    file.write(rendered_page)
+    file.write(rendered_card)
+    # file.write(rendered_search)
 
 if __name__=='__main__':
     rom_program()
